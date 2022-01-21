@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.menu a{
+    margin-right: 20px;
+    color: rgb(0, 0, 0,0.87);
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    text-decoration: inherit;
+}
+
+.menu a:hover {
+    text-decoration:underline;
+}
+
+.menu__left{
+    display: flex;
+    align-items: center;
+}
+
+.menu__right{
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.menu__right a{
+    margin-right: 20px;
+    color: rgb(0, 0, 0, 0.87);
+    font-size: 15px;
+    text-decoration: inherit;
+    font-family: Arial, sans-serif;
+}
+
+.menu__right a:hover{
+    text-decoration: underline;
+}
+
+.menu__right .menu__icon{
+    padding: 12px;
+}
+/* MAIN */
+
+.content {
+    display: flex;
+    flex : l;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    object-fit: contain;
+    height: 100px;
+}
+
+.content__search{
+   display: flex;
+   align-items: center;
+   border: 1px solid lightgray;
+   height: 30px;
+   padding: 10px 20px;
+   border-radius: 999px;
+   width: 75vw;
+   margin: 0 auto;
+   margin-top: 40px;
+   max-width: 560px;
+}
+
+.content__search input{
+   flex: 1; 
+   padding: 10px 20px;
+   border: none;
+   outline: none;
+}
+
+.content__search .material-icons{
+    color: gray;
+}
+
+.content__search-button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.content__search-button button{ 
+   margin: 5px;
+   padding: 10px 15px;
+   background-color: #f8f8f8;
+   border-radius: 90px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+.content__offer{
+    margin-top: 24px;
+    font-size: 13px;
+    padding: 6px 12px;
+}
+
+.content__offer a{
+    text-decoration: none;
+    color: #1967d2;
+}
+/* MEDIA QUERY */
+@media(min-width :763px){
+    .content{
+        padding-top: 120px;
+    }
+    .content__logo{
+        height: 150px;
+    }
+}
